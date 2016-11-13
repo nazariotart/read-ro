@@ -3,6 +3,8 @@
 Created on Tue Oct 25 15:53:11 2016
 
 @author: nazario
+
+This file merges files in a directory to another
 """
 
 import os
