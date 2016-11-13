@@ -1,13 +1,9 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Nov 13 11:44:51 2016
 
-@author: nazario
-"""
 import sys
 from numpy import NaN, Inf, arange, isscalar, asarray, array
 def peakdet(v, delta, x = None):
     """
+    Credits to Eli Billauer, 3.4.05 (Explicitly not copyrighted).
     Converted from MATLAB script at http://billauer.co.il/peakdet.html
     
     Returns two arrays
@@ -77,11 +73,11 @@ def peakdet(v, delta, x = None):
 
     return array(maxtab), array(mintab)
 
-#if __name__=="__main__":
-#    from matplotlib.pyplot import plot, scatter, show
-#    series = [0,0,0,2,0,0,0,-2,0,0,0,2,0,0,0,-2,0]
-#    maxtab, mintab = peakdet(series,.3)
-#    plot(series)
-#    scatter(array(maxtab)[:,0], array(maxtab)[:,1], color='blue')
-#    scatter(array(mintab)[:,0], array(mintab)[:,1], color='red')
-#show()
+if __name__=="__main__":
+    from matplotlib.pyplot import plot, scatter, show
+    series = [0,0,0,2,0,0,0,-2,0,0,0,2,0,0,0,-2,0]
+    maxtab, mintab = peakdet(series,.3)
+    plot(series)
+    scatter(array(maxtab)[:,0], array(maxtab)[:,1], color='blue')
+    scatter(array(mintab)[:,0], array(mintab)[:,1], color='red')
+    show()
