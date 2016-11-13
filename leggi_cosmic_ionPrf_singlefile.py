@@ -31,9 +31,9 @@ mm=fh.minute
 ss=fh.second
 lons = fh.variables['GEO_lon'][:]
 lats = fh.variables['GEO_lat'][:]
-alt=fh.variables['MSL_alt'][:]
-tec = fh.variables['TEC_cal'][:]
-elden=fh.variables['ELEC_dens'][:]
+alt  = fh.variables['MSL_alt'][:]
+tec  = fh.variables['TEC_cal'][:]
+elden= fh.variables['ELEC_dens'][:]
 
 #find max and min values
 
